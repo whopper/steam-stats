@@ -1,0 +1,78 @@
+<div id='header' class='col-md-12'>
+  <h1 id='mainHeader'>Player Clock</h1>
+  <h5 id='subHeader'>How much of your lifetime has been consumed by Steam?</h5>
+  <hr>
+</div>
+
+<div id='reportInputContainer' class='row'>
+  <div id='reportFileContainer' class='col-md-6 col-md-offset-4'>
+    <form action='/playerclock' method='post'>
+      <textarea id='reportInput' name='playerid' rows='1' cols='60' placeholder='Your Steam ID, i.e: 76561198023727681'></textarea>
+      <p class='help-block'>Login to <b><a href="https://steamcommunity.com/">https://steamcommunity.com/</a></b> to find your unique Steam ID.</p>
+      <button id='submitBtn' type='submit' class='btn btn-primary'>Go!</button>
+    </form>
+  </div>
+</div>
+
+<hr>
+
+<div id='reportContainer'>
+  <div class='time-box-container'>
+    <div class='time-box'>
+      <div class='time-box-data' style='color: green;'>
+        <%= @minutes %>
+      </div>
+      <hr style="width:75%">
+      <div class='time-box-title'>
+        Minutes
+      </div>
+    </div>
+    <div class='time-box'>
+      <div class='time-box-data' style='color: green;'>
+        <%= @hours %>
+      </div>
+      <hr style="width:75%">
+      <div class='time-box-title'>
+        Hours
+      </div>
+    </div>
+    <div class='time-box'>
+      <div class='time-box-data' style='color: green;'>
+        <%= @days %>
+      </div>
+      <hr style="width:75%">
+      <div class='time-box-title'>
+        days
+      </div>
+    </div>
+    <div class='time-box'>
+      <div class='time-box-data' style='color: green;'>
+        <%= @months %>
+      </div>
+      <hr style="width:75%">
+      <div class='time-box-title'>
+        Months
+      </div>
+    </div>
+    <div class='time-box'>
+      <div class='time-box-data' style='color: green;'>
+        <%= @years %>
+      </div>
+      <hr style="width:75%">
+      <div class='time-box-title'>
+        Years
+      </div>
+    </div>
+  </div>
+
+  <div class='time-box-container'>
+    <div class='time-box-lifespan'>
+      <div class='time-box-data-lifespan' style='color: green;'>
+        <%= @lifespan_percent %><span style='color: white; font-size:30px;'>%</span>
+      </div>
+      <hr style="width:75%">
+      <div class='time-box-title-lifespan'>
+        Percentage of <br> expected lifespan
+      </div>
+    </div>
+</div>

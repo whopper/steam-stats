@@ -2,13 +2,17 @@ require 'sinatra'
 require 'open-uri'
 require 'json'
 
-get '/playtime' do
-  erb :playtime
+get '/' do
+  erb :playerclock
 end
 
-post '/playtime' do
+get '/playerclock' do
+  erb :playerclock
+end
+
+post '/playerclock' do
   calculate_playtime(params[:playerid])
-  erb :playtime
+  erb :playerclock
 end
 
 def calculate_playtime(playerid)
