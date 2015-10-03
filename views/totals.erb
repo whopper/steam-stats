@@ -1,7 +1,68 @@
 <div id='reportContainer'>
-  Minutes: <%= @minutes %>
-  Hours: <%= @hours %>
-  Days: <%= @days %>
-  Months: <%= @months %>
-  Years: <%= @years %>
+  <div class='time-box-container'>
+    <div class='time-box'>
+      <div class='time-box-data' style='color: green;'>
+        <%= @minutes %>
+      </div>
+      <hr style="width:75%">
+      <div class='time-box-title'>
+        Minutes
+      </div>
+    </div>
+    <div class='time-box'>
+      <div class='time-box-data' style='color: green;'>
+        <%= @hours %>
+      </div>
+      <hr style="width:75%">
+      <div class='time-box-title'>
+        Hours
+      </div>
+    </div>
+    <div class='time-box'>
+      <div class='time-box-data' style='color: green;'>
+        <%= @days %>
+      </div>
+      <hr style="width:75%">
+      <div class='time-box-title'>
+        days
+      </div>
+    </div>
+    <div class='time-box'>
+      <div class='time-box-data' style='color: green;'>
+        <%= @months %>
+      </div>
+      <hr style="width:75%">
+      <div class='time-box-title'>
+        Months
+      </div>
+    </div>
+    <div class='time-box'>
+      <div class='time-box-data' style='color: green;'>
+        <%= @years %>
+      </div>
+      <hr style="width:75%">
+      <div class='time-box-title'>
+        Years
+      </div>
+    </div>
+  </div>
+
+  <div class='time-box-container'>
+    <div class='time-box-lifespan'>
+      <div class='time-box-data-lifespan' style='color: green;'>
+        <%= @lifespan_percent %><span style='color: white; font-size:30px;'>%</span>
+      </div>
+      <hr style="width:75%">
+      <div class='time-box-title-lifespan'>
+        Percentage of <br> expected lifespan
+      </div>
+    </div>
+
+<!--
+  <div class='time-box-container'>
+    <div class='time-box'></div>
+
+    <div class='time-box'></div>
+  </div>
+-->
 </div>
