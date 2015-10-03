@@ -1,7 +1,7 @@
 <div id='header' class='col-md-12'>
-  <h1 id='mainHeader'>Steam Playtime</h1>
-  <h5 id='subHeader'>How much of your life is spent on Steam?</h5>
-  <hr class='DARSdivider'>
+  <h1 id='mainHeader'>Steam Clock</h1>
+  <h5 id='subHeader'>How much of your lifetime has been consumed by Steam?</h5>
+  <hr>
 </div>
 
 <div id='reportInputContainer' class='row'>
@@ -15,5 +15,8 @@
   </div>
 </div>
 
-<hr class='DARSdivider'>
+<hr>
+
+<% if @minutes %>
 <%= erb :totals %>
+<% end %>

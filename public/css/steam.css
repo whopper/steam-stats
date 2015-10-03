@@ -1,0 +1,33 @@
+body {
+  background: black;
+  color: white;
+}
+
+hr {
+  border-width: 3px;
+  border-top:1px solid white;
+}
+
+table { width: 50%; }
+
+th {
+  background-color: #505050;
+  color: white;
+}
+
+td { cursor: pointer; }
+
+.help-block {
+  color: white;
+}
+
+.dataRect {
+  margin-bottom: 5px;
+  padding: 10px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#mainHeader { text-indent: 20px; }
+#subHeader { text-indent: 60px; }
