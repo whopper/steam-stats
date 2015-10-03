@@ -21,13 +21,54 @@ td { cursor: pointer; }
   color: white;
 }
 
-.dataRect {
-  margin-bottom: 5px;
-  padding: 10px;
-  padding-bottom: 5px;
-  font-size: 13px;
-  cursor: pointer;
+.time-box-container {
+  width: 90%;
+  margin: 10px auto;
+  position: relative;
+  text-align:center;
+}
+
+.time-box {
+  border-width: 3px;
+  border:1px solid gray;
+  height: 200px;
+  width: auto;
+  min-width: 200px;
+  display:inline-block;
+  margin: 10px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+background: rgb(69,72,77); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(69,72,77,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.time-box-title {
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+.time-box-title-lifespan {
+  font-size: 25px;
+}
+
+.time-box-data {
+  font-size: 60px;
+}
+
+.time-box-data-lifespan {
+  font-size: 50px;
 }
 
 #mainHeader { text-indent: 20px; }
 #subHeader { text-indent: 60px; }
+
+#reportContainer {
+  margin-left: 10px;
+}
+
+
